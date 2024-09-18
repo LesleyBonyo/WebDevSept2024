@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<style>
+		h1, h2, h3, h4, h5, h6 {
+			text-decoration: underline;
+		}
+	</style>
 	<title>HTML Elements</title>
+	<script></script>
 </head>
 <body>
 	<!-- Headings -->
@@ -60,11 +67,55 @@
 
 
 	</table>
-	<!-- Form aand Form elements -->
+	<!-- Form and Form elements -->
 	<h2>Registration Form</h2>
 	<form>
 		<label>First Name: </label>
-		<input type="date" name="firstName">
+		<input type="text" name="firstName" required>
+		<label>Email: </label>
+		<input type="email" name="email" placeholder="Enter Email">
+		<label>Age: </label>
+		<input type="number" name="age" min="0" required max="18">
+		<label>DOB: </label>
+		<input type="date" name="dob">
+		<label>Password: </label>
+		<input type="password" name="password">
+		<label>Upload ID: </label>
+		<input type="file" name="idcard">
+		<label>Registration month: </label>
+		<input type="month" name="regmonth">
+		<!-- radio button-->
+		<label>Gender:</label>
+		<input type="radio" name="gender" value="Male">
+		<label>Male</label>
+		<input type="radio" name="gender" value="Female">
+		<label>Female</label>
+		<!-- checkbox -->
+		<label>Units Registered</label>
+		<input type="checkbox" name="unit1" value="Web Development">
+		<label>Web Development</label>
+		<input type="checkbox" name="unit2" value="Software Engineering">
+		<label>Software Engineering</label>
+		<input type="checkbox" name="unit3" value="DSA">
+		<label>Data structures and Algorithms</label>
+		<!-- text area -->
+		<label> Registration Essay: </label>
+		<textarea name="essay" rows="6" cols="10">I am registering because...</textarea>
+		<!-- select -->
+		<label>Course:</label>
+		<select name="course">
+			<option>Select Course</option>
+			<option value="">DBIT</option>
+			<option>BICS</option>
+			<option>BBIT</option>
+		</select>
+		<button type=""><img src="flower.jfif" width="10%">Another Button</button>
+
+		<!-- submit -submitting the form -->
+		<input type="submit" name="submit" value="Register">
+		<!-- button -->
+		<input type="button" name="login" value="login">
+		<input type="reset" name="reset">
 	</form>
 	
 </body>
