@@ -1,0 +1,32 @@
+h1 {
+	text-decoration: underline;
+	text-align: right;
+}
+
+/* comment here */
+/* element selector */
+p {
+	font-family: sans-serif;
+}
+/* class selector */
+.myclass {
+	font-weight: bold;
+}
+/* id selector */
+#myparagraph {
+	color: white;
+}
+/* grouping selector */
+h1, h2 {
+	text-decoration: underline;
+	text-align: right;
+}
+/* descendant selector */
+div a {
+	font-size: 10px;
+	color: yellow;
+}
+/* attribute selector */
+[type="text"] {
+ 	border: 2px solid green;
+}
