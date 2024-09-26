@@ -12,6 +12,9 @@ p {
 .myclass {
 	font-weight: bold;
 }
+h1.myclass {
+
+}
 /* id selector */
 #myparagraph {
 	color: white;
@@ -29,4 +32,8 @@ div a {
 /* attribute selector */
 [type="text"] {
  	border: 2px solid green;
+}
+/* universal selector */
+* {
+
 }
