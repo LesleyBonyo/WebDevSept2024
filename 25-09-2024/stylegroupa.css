@@ -9,6 +9,7 @@ h1 {
 	text-decoration: overline;
 	text-transform: uppercase;
 	font-style: italic;
+	clear: both;
 }
 p{
 	text-indent: 15px;
@@ -17,4 +18,104 @@ p{
 	font-family: "Playwrite DE Grund", "Poppins",sans-serif, "Times New Roman";
 	font-size: 20px;
 	font-weight: bolder;
+	height: 140px;
+	overflow: hidden;
+	opacity: 0.5;
+}
+#div3 {
+	height: 100px;
+
+}
+/* styling links */
+a {
+	font-size: 25px;
+	text-decoration: none;
+	float: right;
+	/*clear: right;*/
+	/*display: block;*/
+	/* borders 
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;*/
+	border: 1px solid black;
+	border-radius: 15px;
+	/* padding 
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;*/
+	padding: 20px;
+	/* margin */
+	margin: 20px;
+}
+input {
+	display: block;
+	margin: auto;
+}
+/* normal link */
+a:link {
+	color: blue;
+}
+/* visited link */
+a:visited {
+	color: green;
+}
+/* hover over link */
+a:hover {
+	color: white;
+	background-color: rgba(0, 0, 255, 0.2);
+}
+/* when link is clicked */
+a:active {
+	color: red;
+}
+/* backgrounds */
+body {
+	/*background-color: lightblue;*/
+	background-image: url('back.jfif');
+	background-repeat: no-repeat;
+	/*background-position: left;*/
+	background-size: cover;
+}
+/* lists */
+ol {
+	list-style-type: lower-alpha;
+}
+ul {
+	list-style-type: square;
+	list-style-image: url('back.jfif');
+}
+/* borders */
+table, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+tr:hover {
+	background-color: black;
+	color: white;
+}
+
+#div1 {
+	width: 500px;
+	border: 1px solid black;
+}
+#div2{
+	width: 500px;
+	border: 1px solid black;
+	padding: 100px;
+	
+}
+*{
+	box-sizing: border-box;
+}
+
+/* css units */
+#parent {
+	font-size: 0.5rem;
+}
+span{
+	font-size: 2em;
+}
+html {
+	font-size: 30px;
 }
