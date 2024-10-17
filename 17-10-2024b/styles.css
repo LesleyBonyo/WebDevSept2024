@@ -1,0 +1,61 @@
+#navigation {
+	list-style-type: none;
+	background-color: #146645;
+	padding: 24px;
+	overflow: hidden;
+}
+/*li {
+	display: inline;
+}*/
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+li a {
+	color: white;
+	text-decoration: none;
+	padding: 22px 35px;
+}
+li a:hover {
+	color: #146645;
+	background-color: white;
+}
+.active {
+	background-color: #B6E6D2;
+}
+h1 {
+	text-align: center;
+}
+#loginform {
+	background-color: #146645;
+	margin: 30px 70px;
+	border-radius: 7px;
+	padding: 25px;
+}
+label, input, select {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+input, select {
+	padding: 22px 35px;
+	border-radius: 7px;
+	border: none;
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+[type=submit] {
+	margin-top: 12px;
+	background-color: #B6E6D2;
+	color: white;
+}
+[type=submit]:hover {
+	background-color: rgba(182, 230, 210, 0.5);
+}
+label {
+	color: white;
+}
