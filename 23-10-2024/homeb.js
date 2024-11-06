@@ -105,3 +105,44 @@ console.log(paragraphs[1]);
 //by class name
 const myClass = document.getElementsByClassName("myClass"); //array
 console.log(myClass[1]);
+
+//properties
+//innerHTML - get or change inner content of an element
+let mydiv = document.getElementById("mydiv");
+mydiv.innerHTML += myPar.innerHTML;
+mydiv.innerHTML = "This has been added";
+// html attributes
+//src
+let myImg = document.getElementById('myimg');
+myImg.src = "https://www.bing.com/th?id=OIP.FRWgbtVdQix0pAPY28iWkwHaFB&w=154&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2";
+//href
+let myLink = document.getElementById('mylink');
+myLink.href = "https://x.com/";
+myLink.title = "Added this title";
+// css styling
+myImg.style.border = "2px dotted red";
+//myImg.style.display = "none";
+
+myLink.style.fontSize = "40px";
+//value - gets the value of an input element
+function getProduct(){
+	const username = document.getElementById('username').value;
+	const number1 = document.getElementById('number1').value;
+	const number2 = document.getElementById('number2').value;
+
+	let product = number1 * number2;
+	let result = username + " your product is " + product;
+	//console.log(result);
+	document.getElementById('myresult').innerHTML = result;
+	document.getElementById('myresult').style.color = 'red';
+	return false;
+}
+//events - eg clicking a button, submitting a form
+function userSubmit(){
+	//let firstname = document.getElementById('firstname').value;
+	let emptyDiv = document.getElementById('emptydiv');
+	emptyDiv.innerHTML += "You has clicked the submit button" + "<br>";
+	//return false;
+}
+//event listeners
+document.getElementById('submit').addEventListener('click', userSubmit);

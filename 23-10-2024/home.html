@@ -10,13 +10,26 @@
 	console.log("Head section");
 	</script>
 </head>
-<body>
+<body onload="alert('You just loaded the page');">
 	<h1 id="heading">Strathmore University</h1>
-	<p class="myClass">This is a paragraph</p>
+	<p id="myPar" class="myClass">This is a paragraph</p>
 	<p>Another paragraph</p>
 	<a href="#" class="myClass">A hyperlink</a>
+	<img src="#" class="myClass" id="myimg" onmouseover="this.src = 'https://th.bing.com/th/id/R.1a7ca27334f9db72e3b1bcfb79f34d80?rik=5cWCuFgBzv2gkw&riu=http%3a%2f%2fwww.insidedogsworld.com%2fwp-content%2fuploads%2f2016%2f03%2fDog-Pictures.jpg&ehk=QwAIftuf5LL7uKfgaOoPBlcrTPby3iE%2b4YpO3lJ6pfQ%3d&risl=&pid=ImgRaw&r=0';" onmouseout="this.src = 'https://www.bing.com/th?id=OIP.FRWgbtVdQix0pAPY28iWkwHaFB&w=154&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2';">
 
+	<a href="https://strathmore.edu/" id="mylink">Strathmore</a>
+	<div id="mydiv"></div>
+	<form onsubmit="return getProduct()">
+		<input type="text" name="username" placeholder="Enter name" id="username">
+		<input type="number" name="number1" placeholder="enter number1" id="number1">
+		<input type="number" name="number2" placeholder="enter number2" id="number2">
+		<input type="submit" name="submit" value="get product">
 
+		<div id="myresult"></div>
+	</form>
+	<div id="div2"></div>
+	<input type="button" id="mybutton" name="button" value="CLICK ME">
+	<!--<button id="mybutton">CLICK ME</button>-->
 	<!-- JS added in the head section-->
 	<script src="home.js"> // external js
 		// js code goes here
