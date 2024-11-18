@@ -42,6 +42,7 @@ function validateInputs(){
 	} else {
 		result1.innerHTML = "";
 	}
+	
 	alert("Successfully signed up");
 	return true;
 
